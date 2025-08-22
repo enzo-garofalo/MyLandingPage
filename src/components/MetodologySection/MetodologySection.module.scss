@@ -1,0 +1,16 @@
+.contentWrap {
+  display: flex;
+  align-items: center;   /* centraliza verticalmente */
+  gap: 2rem;             /* espaço entre o funil e os textos */
+  padding-top: 48px;
+}
+
+.textWrap {
+  display: flex;
+  flex-direction: column; /* empilha título e subtítulo */
+  gap: 0.5rem;            /* espaço entre eles */
+}
+
+.mainTitle{
+  margin-top: 70px;
+}

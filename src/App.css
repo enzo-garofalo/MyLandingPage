@@ -1,0 +1,41 @@
+@font-face{
+  font-family: 'RethinkSans';
+  src: url('fonts/RethinkSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: 'RethinkSans';
+  src: url('fonts/RethinkSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face{
+  font-family: 'RethinkSans';
+  src: url('fonts/RethinkSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face{
+  font-family: 'RethinkSans';
+  src: url('fonts/RethinkSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: -50px;
+  height: 100%;
+  font-family: 'RethinkSans', sans-serif;
+
+  --mainOrange: #FF603D;
+  --subtitleColor: #666666;
+}
+
+main {
+  flex: 1; /* empurra o footer para baixo */
+}

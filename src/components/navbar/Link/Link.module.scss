@@ -1,0 +1,17 @@
+a {
+  font-family: 'RethinkSans', sans-serif; /* ou a fonte que você usa */
+  font-size: 25px;
+  font-weight: 800;
+  color: hsla(0, 0%, 40%, 0.678); /* cinza claro padrão */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #000; /* preto ao passar o mouse */
+}
+
+a.active {
+  color: #000; /* preto para ativo */
+  font-weight: 800; /* negrito */
+}

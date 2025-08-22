@@ -1,0 +1,35 @@
+.btn {
+    display: inline-block;
+    padding: 15px 20px;
+    /* ajustado para ficar proporcional ao 164x69 */
+    background-color: #FF603D;
+    border: none;
+    border-radius: 30px;
+    font-family: 'RethinkSans', sans-serif;
+    /* ajuste para a fonte usada no Figma */
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-align: center;
+    box-shadow:
+        -6px -6px 12px #FFFFFF,
+        /* sombra clara superior/esquerda */
+        6px 6px 12px rgba(204, 76, 47, 0.6);
+        /* sombra escura inferior/direita */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        -6px -6px 12px #FFFFFF,
+        6px 6px 16px rgba(204, 76, 47, 0.6);
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow:
+        -3px -3px 8px #FFFFFF,
+        3px 3px 8px rgba(204, 76, 47, 0.6);
+}

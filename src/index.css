@@ -1,0 +1,52 @@
+:root {
+  font-family: 'RethinkSans', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  --sb-track-color: #ffffff;
+  --sb-thumb-color: #ff603d;
+  --subtitleColor: #666666;
+  --sb-size: 11px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 18px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 0px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+      scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+  opacity: 0; /* esconde no início */
+  transition: opacity 0.3s ease;
+}
+
+/* quando a classe .show-scroll estiver no body → mostra a scrollbar */
+body.show-scroll::-webkit-scrollbar {
+  opacity: 1;
+}

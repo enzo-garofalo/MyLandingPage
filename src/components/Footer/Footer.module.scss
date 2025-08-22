@@ -1,0 +1,44 @@
+.footer {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  width: 100vw;   /* ocupa toda a viewport */
+  margin-left: calc(-50vw + 44.6%); /* corrige centralização do #root */
+}
+
+.text {
+    margin-left: 9rem;
+    /* margem lateral do texto */
+
+    p {
+        margin: 0;
+        line-height: 1.4;
+        font-size: 28px;
+    }
+
+    .name {
+        font-weight: bold;
+    }
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+    /* espaço entre ícones */
+
+    a {
+        color: white;
+        font-size: 1.5rem;
+        transition: transform 0.2s ease, color 0.2s ease;
+
+        &:hover {
+            transform: scale(1.2);
+            color: var(--mainOrange);
+            /* corzinha no hover */
+        }
+    }
+}

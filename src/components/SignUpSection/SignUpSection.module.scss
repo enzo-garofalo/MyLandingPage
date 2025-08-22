@@ -1,0 +1,9 @@
+.sectionWrap {
+    display: flex;
+    align-items: center;
+    /* vertically align title and form */
+    justify-content: center;
+    /* center them horizontally as a group */
+    gap: 40px;
+    /* space between title and form */
+}
