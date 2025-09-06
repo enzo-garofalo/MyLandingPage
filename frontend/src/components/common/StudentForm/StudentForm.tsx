@@ -37,7 +37,7 @@ const StudentForm = () => {
 				<span className={Styles.thirdText}>
 					Pode ser uma atividade, um tema, até um momento especial. ✨
 				</span>
-				<FormTextArea name="gostou" id="gostou" />
+				<FormTextArea name="gostou" id="gostou"/>
 
 				<span className={Styles.title}>O que achou da metodologia?</span>
 				<span className={Styles.thirdText}>

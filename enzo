@@ -1,0 +1,98 @@
+📦src
+ ┣ 📂components
+ ┃ ┣ 📂commons
+ ┃ ┃ ┣ 📜Alert.jsx
+ ┃ ┃ ┣ 📜Alert.module.scss
+ ┃ ┃ ┣ 📜ColumnHeader.jsx
+ ┃ ┃ ┣ 📜FormArray.jsx
+ ┃ ┃ ┣ 📜FormCheckbox.jsx
+ ┃ ┃ ┣ 📜FormInput.jsx
+ ┃ ┃ ┣ 📜FormNestedArray.jsx
+ ┃ ┃ ┣ 📜FormRadio.jsx
+ ┃ ┃ ┣ 📜FormSelect.jsx
+ ┃ ┃ ┣ 📜FormSelectNumbers.jsx
+ ┃ ┃ ┣ 📜FormTable.jsx
+ ┃ ┃ ┣ 📜ImportFile.jsx
+ ┃ ┃ ┣ 📜ImportFile.module.scss
+ ┃ ┃ ┣ 📜Loading.jsx
+ ┃ ┃ ┣ 📜NavTab.jsx
+ ┃ ┃ ┣ 📜NavTab.module.scss
+ ┃ ┃ ┣ 📜SectionContainer.jsx
+ ┃ ┃ ┗ 📜SectionContainer.module.scss
+ ┃ ┣ 📂features
+ ┃ ┃ ┣ 📂Advanced
+ ┃ ┃ ┃ ┣ 📜CorrelatosContainer.jsx
+ ┃ ┃ ┃ ┣ 📜CurvaPropTable.jsx
+ ┃ ┃ ┃ ┣ 📜CurvaPropTable.module.scss
+ ┃ ┃ ┃ ┣ 📜GraphLinesSelector.jsx
+ ┃ ┃ ┃ ┣ 📜PressureGraph.jsx
+ ┃ ┃ ┃ ┣ 📜ProppantConditions.jsx
+ ┃ ┃ ┃ ┣ 📜ProppantConditions.module.scss
+ ┃ ┃ ┃ ┗ 📜ProppantProperties.jsx
+ ┃ ┃ ┣ 📂FormControl
+ ┃ ┃ ┃ ┣ 📜Form.jsx
+ ┃ ┃ ┃ ┣ 📜ImportCase.jsx
+ ┃ ┃ ┃ ┗ 📜ImportCase.module.scss
+ ┃ ┃ ┗ 📂Results
+ ┃ ┃ ┃ ┣ 📜ChartKeys.jsx
+ ┃ ┃ ┃ ┣ 📜FractureData.jsx
+ ┃ ┃ ┃ ┣ 📜GraphResults.jsx
+ ┃ ┃ ┃ ┣ 📜GraphResults.module.scss
+ ┃ ┃ ┃ ┣ 📜ProductivityHorizontal.jsx
+ ┃ ┃ ┃ ┣ 📜ProductivityInclined.jsx
+ ┃ ┃ ┃ ┗ 📜ProductivityVertical.jsx
+ ┃ ┣ 📂layout
+ ┃ ┃ ┣ 📜Aside.jsx
+ ┃ ┃ ┣ 📜Aside.module.scss
+ ┃ ┃ ┣ 📜Body.jsx
+ ┃ ┃ ┣ 📜Header.jsx
+ ┃ ┃ ┣ 📜PageSummary.jsx
+ ┃ ┃ ┗ 📜PageSummary.module.scss
+ ┃ ┗ 📂tabs
+ ┃ ┃ ┣ 📜Advanced.jsx
+ ┃ ┃ ┣ 📜Geomechanics.jsx
+ ┃ ┃ ┣ 📜Operation.jsx
+ ┃ ┃ ┣ 📜Reservoir.jsx
+ ┃ ┃ ┣ 📜Results.jsx
+ ┃ ┃ ┗ 📜Well.jsx
+ ┣ 📂constants
+ ┃ ┣ 📜graphElements.js
+ ┃ ┣ 📜importFileResponses.js
+ ┃ ┗ 📜messages.js
+ ┣ 📂contexts
+ ┃ ┣ 📜AsideContext.jsx
+ ┃ ┣ 📜BodyContext.jsx
+ ┃ ┗ 📜FormContext.jsx
+ ┣ 📂data
+ ┃ ┣ 📜metrics.json
+ ┃ ┣ 📜metrics_si.json
+ ┃ ┣ 📜preset_form.json
+ ┃ ┗ 📜table_data_preset.json
+ ┣ 📂store
+ ┃ ┣ 📜apiSlice.js
+ ┃ ┣ 📜errorSlice.js
+ ┃ ┗ 📜index.js
+ ┣ 📂styles
+ ┃ ┣ 📜main.scss
+ ┃ ┣ 📜_base.scss
+ ┃ ┣ 📜_components.scss
+ ┃ ┣ 📜_layout.scss
+ ┃ ┣ 📜_mixins.scss
+ ┃ ┣ 📜_partial.scss
+ ┃ ┣ 📜_utilities.scss
+ ┃ ┗ 📜_variables.scss
+ ┣ 📂utils
+ ┃ ┣ 📜applyFormPresets.js
+ ┃ ┣ 📜graphPrepare.js
+ ┃ ┣ 📜inputConditions.js
+ ┃ ┣ 📜inputType.js
+ ┃ ┣ 📜mapFields.js
+ ┃ ┣ 📜metricConverter.js
+ ┃ ┣ 📜metricHandler.js
+ ┃ ┣ 📜navigationTabs.js
+ ┃ ┣ 📜utilsMethods.js
+ ┃ ┣ 📜validationHandler.js
+ ┃ ┣ 📜validationStyles.js
+ ┃ ┗ 📜watchFields.js
+ ┣ 📜App.jsx
+ ┗ 📜main.jsx
