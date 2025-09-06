@@ -3,7 +3,7 @@ import './App.css'
 import FormLayout from './layout/FormLayout'
 import MainLayout from './layout/MainLayout'
 import Home from './pages/Home'
-import StudentFormPage from './pages/studentFormPage'
+import StudentFormPage from './pages/StudentFormPage'
 
 function App() {
 

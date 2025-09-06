@@ -1,9 +1,8 @@
-import StudentForm from "../components/common/studentForm"
+import StudentForm from "../components/common/StudentForm/StudentForm"
 
 export default function StudentFormPage()
 {
     return(
-        
         <StudentForm />
     )
 }
