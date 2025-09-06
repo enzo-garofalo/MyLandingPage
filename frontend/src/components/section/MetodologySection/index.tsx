@@ -1,7 +1,7 @@
-import MainTitle from '../MainTitle'
-import stylesSpan from "../MainTitle/MainTitle.module.scss"
-import SecondTitle from '../SecondTitle'
-import SubtitleText from '../SubTitleText'
+import MainTitle from '../../common/MainTitle'
+import stylesSpan from "../../common/MainTitle/MainTitle.module.scss"
+import SecondTitle from '../../common/SecondTitle'
+import SubtitleText from '../../common/SubTitleText'
 import Funil from './Funil'
 import styles from "./MetodologySection.module.scss"
 

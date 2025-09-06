@@ -1,24 +1,24 @@
 @font-face{
   font-family: 'RethinkSans';
-  src: url('fonts/RethinkSans-Regular.ttf') format('truetype');
+  src: url('./assets/fonts/RethinkSans-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 
 @font-face{
   font-family: 'RethinkSans';
-  src: url('fonts/RethinkSans-SemiBold.ttf') format('truetype');
+  src: url('./assets/fonts/RethinkSans-SemiBold.ttf') format('truetype');
   font-weight: 600;
 }
 
 @font-face{
   font-family: 'RethinkSans';
-  src: url('fonts/RethinkSans-Bold.ttf') format('truetype');
+  src: url('./assets/fonts/RethinkSans-Bold.ttf') format('truetype');
   font-weight: 700;
 }
 
 @font-face{
   font-family: 'RethinkSans';
-  src: url('fonts/RethinkSans-ExtraBold.ttf') format('truetype');
+  src: url('./assets/fonts/RethinkSans-ExtraBold.ttf') format('truetype');
   font-weight: 800;
 }
 

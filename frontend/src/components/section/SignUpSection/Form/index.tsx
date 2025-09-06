@@ -1,5 +1,5 @@
-import Button from '../../Button'
-import Input from '../../Input/Input'
+import Button from '../../../common/Button'
+import Input from '../../../common/Input/Input'
 import styles from './Form.module.scss'
 
 const Form = () => {

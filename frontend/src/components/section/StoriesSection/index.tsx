@@ -1,5 +1,5 @@
-import MainTitle from "../MainTitle"
-import stylesSpan from "../MainTitle/MainTitle.module.scss"
+import MainTitle from "../../common/MainTitle"
+import stylesSpan from "../../common/MainTitle/MainTitle.module.scss"
 import Card from "./Card"
 import styles from "./StoriesSection.module.scss"
 
