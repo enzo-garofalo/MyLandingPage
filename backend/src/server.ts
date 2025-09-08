@@ -3,6 +3,8 @@ import cors from 'cors';
 import express from 'express';
 
 import { type Request, type Response, Router } from 'express';
+import { connectToDatabase } from './models/studentsForm.js';
+import { StudentFormManager } from './routes/studentFormHandler.js';
 
 const port = process.env.PORT || 3000;
 
@@ -25,12 +27,18 @@ router.get('/health', (req: Request, res: Response) => {
 });
 
 // Student Form Feature routes
-router.post('/student/submit-form', (req: Request, res: Response) => {
-  res.json({ message: 'Hello, world!' });
-});
+router.post('/student/submit-form', StudentFormManager.SubmitAnswer);
+
 
 
 server.use(router); 
-server.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
+connectToDatabase()
+  .then(() => {
+    server.listen(port, () => {
+      console.log(`✅ Server is running on http://localhost:${port}`);
+    });
+  })
+  .catch((err) => {
+    console.error("❌ Failed to connect to database", err);
+    process.exit(1);
+  });
