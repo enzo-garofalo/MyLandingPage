@@ -1,17 +1,20 @@
 .formContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alinha tudo à esquerda */
+  align-items: flex-start;
+  /* Alinha tudo à esquerda */
   justify-content: flex-start;
   width: 90%;
-  max-width: 900px; /* limite maior para telas grandes */
+  max-width: 900px;
+  /* limite maior para telas grandes */
   margin: 0 auto;
   padding: 2rem;
   box-sizing: border-box;
-  gap: 1.5rem; /* espaçamento entre inputs e blocos */
+  gap: 1.5rem;
+  /* espaçamento entre inputs e blocos */
 }
 
-.formContainer button{
+.formContainer button {
   margin: 0 auto;
 
 }
@@ -23,7 +26,7 @@
   min-width: 250px;
   height: clamp(50px, 6vw, 60px);
   padding: 0.8em 1em;
-  font-size: clamp(20px, 3vw, 30px);
+  font-size: clamp(15px, 2.5vw, 30px);
   text-align: left;
   border-radius: 20px;
   border: none;
@@ -51,7 +54,7 @@
 
 .customTextArea {
   padding: 1em;
-  font-size: 1.2rem;
+  font-size: clamp(15px, 2.5vw, 30px);
   min-height: clamp(80px, 12vw, 120px);
   resize: none;
   font-family: 'RethinkSans', sans-serif;
@@ -85,7 +88,7 @@
   border-radius: 50%;
   background: #ffffff;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2),
-              0 2px 4px rgba(0, 0, 0, 0.1);
+    0 2px 4px rgba(0, 0, 0, 0.1);
   border: none;
   outline: none;
   transition: all 0.3s ease;
@@ -95,17 +98,17 @@
 .inputLabel input[type="radio"]:checked {
   background: radial-gradient(circle at center, #ff5733, #ff5733);
   box-shadow: 0 0 8px rgba(255, 87, 51, 0.7),
-              inset 0 0 4px rgba(255, 87, 51, 0.5);
+    inset 0 0 4px rgba(255, 87, 51, 0.5);
   transform: scale(1.05);
 }
 
-.inputLabel input[type="radio"]:checked + span {
+.inputLabel input[type="radio"]:checked+span {
   color: #ff5733;
 }
 
 .inputLabel input[type="radio"]:hover {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2),
-              inset 0 0 4px rgba(0, 0, 0, 0.1);
+    inset 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
 .textWrapper {
@@ -115,7 +118,8 @@
   padding: 2rem;
   max-width: 900px;
   margin: 0 auto;
-  gap: 1rem; /* espaçamento entre textos */
+  gap: 1rem;
+  /* espaçamento entre textos */
 }
 
 .title {
