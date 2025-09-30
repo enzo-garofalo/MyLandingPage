@@ -1,0 +1,12 @@
+.sectionWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+    /* Torna responsivo em telas menores */
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 20px; /* gap menor em mobile */
+    }
+}

@@ -1,20 +1,23 @@
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import './App.css'
-import Footer from './components/Footer'
-import MetodologySection from './components/MetodologySection'
-import NavBar from './components/navbar'
-import SignUpSection from './components/SignUpSection'
-import StoriesSection from './components/StoriesSection'
+import FormLayout from './layout/FormLayout'
+import MainLayout from './layout/MainLayout'
+import Home from './pages/Home'
+import StudentFormPage from './pages/StudentFormPage'
+import ThankYouPage from './pages/ThankYouPage'
+
 function App() {
 
-  return (
-    <>
-      <NavBar />
-      <SignUpSection />
-      <MetodologySection />
-      <StoriesSection />
-      <Footer />
-    </>
-  )
+	return (
+		<Router>
+			<Routes>
+				<Route path="/" element={<MainLayout><Home /></MainLayout>} />
+				<Route path="/form" element={<FormLayout><StudentFormPage /></FormLayout>} />
+				<Route path="/thank-you" element={<FormLayout><ThankYouPage /></FormLayout>} />
+			</Routes>
+		</Router>
+
+	)
 }
 
 export default App

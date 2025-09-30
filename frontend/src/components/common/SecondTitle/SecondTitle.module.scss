@@ -1,0 +1,32 @@
+.SecondTitle {
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: right;
+    margin: 0;
+    line-height: 116.1%;
+    letter-spacing: -0.05em;
+
+    @media (max-width: 1200px) {
+        font-size: 3.5rem;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+        text-align: center; /* Centraliza em tablet */
+        letter-spacing: -0.03em; /* Menos apertado em telas menores */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 2rem;
+        line-height: 120%;
+        letter-spacing: -0.02em;
+    }
+
+    @media (max-width: 360px) {
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,46 @@
+a {
+  font-family: 'RethinkSans', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  color: hsla(0, 0%, 40%, 0.678);
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  @media (max-width: 1024px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    font-weight: 700; /* Levemente mais leve em telas menores */
+  }
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 0; /* Área de toque maior para mobile */
+  }
+}
+
+a:hover {
+  color: #000;
+
+  @media (max-width: 480px) {
+    /* Desabilita hover em touch devices, mantém apenas active */
+    color: hsla(0, 0%, 40%, 0.678);
+  }
+}
+
+a.active {
+  color: #000;
+  font-weight: 800;
+
+  @media (max-width: 768px) {
+    font-weight: 700;
+  }
+
+  @media (max-width: 480px) {
+    font-weight: 600;
+    border-bottom: 2px solid #000; /* Indicador visual em mobile */
+  }
+}

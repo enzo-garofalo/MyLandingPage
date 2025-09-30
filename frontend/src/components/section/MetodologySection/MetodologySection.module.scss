@@ -1,0 +1,40 @@
+.contentWrap {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 48px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 30px;
+  }
+
+  @media (max-width: 480px) {
+    gap: 1rem;
+    padding-top: 20px;
+  }
+}
+
+.textWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  @media (max-width: 768px) {
+    text-align: center; /* Centraliza textos em mobile */
+    gap: 0.3rem;
+  }
+}
+
+.mainTitle {
+  margin-top: 70px;
+
+  @media (max-width: 768px) {
+    margin-top: 40px;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 20px;
+  }
+}

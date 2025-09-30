@@ -1,0 +1,45 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+
+  @media (max-width: 1024px) {
+    padding: 18px 30px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 15px 20px;
+    flex-wrap: wrap; /* Permite quebra de linha se necessário */
+  }
+
+  @media (max-width: 480px) {
+    padding: 12px 15px;
+    flex-direction: column; /* Empilha logo e menu verticalmente */
+    gap: 15px;
+  }
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+
+  @media (max-width: 1024px) {
+    gap: 30px;
+  }
+
+  @media (max-width: 768px) {
+    gap: 20px;
+    font-size: 0.9rem; /* Texto menor se necessário */
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column; /* Menu vertical em mobile */
+    gap: 12px;
+    text-align: center;
+    width: 100%;
+  }
+}

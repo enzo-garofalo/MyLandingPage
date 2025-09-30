@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    align-items: center; /* Centraliza os cards em mobile */
+  }
+}
+
+.card {
+  background: #fff;
+  padding: 20px 40px;
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--mainOrange);
+  box-shadow: 
+    inset 6px 6px 12px rgba(126, 117, 117, 0.6), 
+    inset -6px -6px 12px rgba(204, 76, 47, 0.07);
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.253);
+  text-align: left;
+
+  @media (max-width: 1024px) {
+    font-size: 3rem;
+    padding: 18px 35px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+    padding: 15px 30px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+    padding: 12px 20px;
+    text-align: center; /* Centraliza texto em mobile pequeno */
+  }
+}
+
+.first {
+  width: 580px;
+  border-radius: 12px 12px 12px 0px;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    max-width: 450px;
+    border-radius: 12px 12px 0px 0px; /* Ajusta cantos para mobile */
+  }
+
+  @media (max-width: 480px) {
+    width: 95%;
+  }
+}
+
+.second {
+  width: 480px;
+  border-radius: 0px 0px 12px 0px;
+
+  @media (max-width: 768px) {
+    width: 85%;
+    max-width: 400px;
+    border-radius: 0px; /* Remove cantos no meio */
+  }
+
+  @media (max-width: 480px) {
+    width: 90%;
+  }
+}
+
+.third {
+  width: 380px;
+  border-radius: 0px 0px 12px 12px;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    max-width: 350px;
+    border-radius: 0px 0px 12px 12px; /* Mantém cantos inferiores */
+  }
+
+  @media (max-width: 480px) {
+    width: 85%;
+  }
+}
