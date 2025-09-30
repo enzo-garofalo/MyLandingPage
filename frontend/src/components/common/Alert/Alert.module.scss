@@ -6,7 +6,7 @@
   padding: 1rem 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  min-width: 320px;
+  min-width: 420px;
   max-width: 90%;
   display: flex;
   align-items: center;
@@ -43,14 +43,18 @@
   font-size: 0.9rem;
 }
 
-.alertContainer button {
+.closeButton {
   background: transparent;
   border: none;
   color: #fff;
-  font-weight: bold;
-  font-size: 1.2rem;
   cursor: pointer;
   padding: 0.5rem;
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.closeButton:hover {
+  opacity: 1;
 }
 
 @keyframes fadeIn {

@@ -1,4 +1,3 @@
-import Button from '../Button';
 import Styles from './Alert.module.scss';
 
 type AlertProps = {
@@ -26,7 +25,9 @@ const Alert = ({ message, onClose, type }: AlertProps) => {
                 <span className={Styles.title}>{title}</span>
                 <span className={Styles.message}>{message}</span>
             </div>
-            <Button onClick={onClose}>X</Button>
+            <button onClick={onClose} className={Styles.closeButton}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
         </div>
     )
 }
