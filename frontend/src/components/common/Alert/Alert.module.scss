@@ -1,29 +1,46 @@
 .alertContainer {
-  position: fixed;       // Fica no topo da tela
+  position: fixed;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
   padding: 1rem 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  color: #f38a00;
-  font-weight: 500;
-  min-width: 280px;
+  min-width: 320px;
   max-width: 90%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   z-index: 9999;
-  background-color: #fff;
+  color: #fff;
   animation: fadeIn 0.3s ease-in-out;
 }
 
 .alertContainer.error {
-  background-color: #f56565; // vermelho
+  background-color: #f56565;
 }
 
 .alertContainer.success {
-  background-color: #48bb78; // verde
+  background-color: #48bb78;
+}
+
+.icon {
+  margin-right: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.message {
+  font-size: 0.9rem;
 }
 
 .alertContainer button {
@@ -31,8 +48,9 @@
   border: none;
   color: #fff;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
+  padding: 0.5rem;
 }
 
 @keyframes fadeIn {

@@ -20,6 +20,7 @@ const validateForm = (formData: AnswerData): string | null => {
 
 const StudentForm = () => {
 	const [alertMessage, setAlertMessage] = useState<string>("");
+	const [alertType, setAlertType] = useState<'success' | 'error'>('error');
 	const [selected, setSelected] = useState<string>('opcao1');
 	const [formData, setFormData] = useState<AnswerData>({
 		name: "",
@@ -40,6 +41,7 @@ const StudentForm = () => {
 		const errorMessage = validateForm(formData);
 		if (errorMessage) {
 			setAlertMessage(errorMessage);
+			setAlertType('error');
 			console.log(errorMessage) 
 			return; 
 		}
@@ -47,20 +49,23 @@ const StudentForm = () => {
 		try {
 			const response = await submitForm(formData);
 			setAlertMessage(`Formulário enviado com sucesso! ID: ${response.id}`);
+			setAlertType('success');
 		} catch (error) {
 			if (error instanceof Error) {
 				console.error(error);
 				setAlertMessage(error.message || "Erro ao enviar formulário. Tente novamente.");
+				setAlertType('error');
 			} else {
 				console.error("An unexpected error occurred");
 				setAlertMessage("Ocorreu um erro inesperado. Tente novamente.");
+				setAlertType('error');
 			}
 		}
 	};
 
 	return (
 		<>
-			<Alert message={alertMessage} onClose={() => setAlertMessage("")} />
+			<Alert message={alertMessage} onClose={() => setAlertMessage("")} type={alertType} />
 
 			<form className={Styles.formContainer} onSubmit={handleSubmit}>
 				<span className={Styles.title}>Qual é o seu nome?</span>
