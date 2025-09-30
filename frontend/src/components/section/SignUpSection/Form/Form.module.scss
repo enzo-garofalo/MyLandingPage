@@ -3,39 +3,74 @@
     height: 450px;
     border-radius: 45px;
 
-    /* Gradiente no stroke externo */
     background:
         linear-gradient(white, white) padding-box,
         linear-gradient(to bottom, #ffffff, #ffffff) border-box;
 
-    /* Sombra externa e interna */
     box-shadow:
         8px 8px 12px rgba(0, 0, 0, 0.35),
-        /* Drop shadow */
         inset -6px -6px 12px rgba(0, 0, 0, 0.25);
-    /* Inner shadow */
 
     padding: 43px;
 
     display: flex;
     flex-direction: column;
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        width: 90%;
+        max-width: 450px;
+        height: auto;
+        min-height: 400px;
+        padding: 30px;
+        border-radius: 30px;
+    }
+
+    @media (max-width: 480px) {
+        width: 95%;
+        padding: 20px;
+        border-radius: 25px;
+    }
 }
 
-.title{
+.title {
     padding-top: 25px;
     text-align: right;
     padding-right: 44px;
     font-size: 3rem;
     font-weight: 700;
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+        padding-right: 20px;
+        padding-top: 15px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 2rem;
+        padding-right: 10px;
+        text-align: center; /* Centraliza em mobile */
+    }
 }
 
-.SecondTitle{
+.SecondTitle {
     text-align: right;
     padding-right: 43px;
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 5px;
     color: var(--subtitleColor);
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+        padding-right: 20px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 18px;
+        padding-right: 10px;
+        text-align: center; /* Centraliza em mobile */
+    }
 }
 
 .inputWrap {
@@ -43,4 +78,12 @@
     flex-direction: column;
     align-items: center;
     gap: 35px;
+
+    @media (max-width: 768px) {
+        gap: 25px;
+    }
+
+    @media (max-width: 480px) {
+        gap: 20px;
+    }
 }

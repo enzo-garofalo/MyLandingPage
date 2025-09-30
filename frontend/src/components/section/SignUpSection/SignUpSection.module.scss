@@ -1,9 +1,12 @@
 .sectionWrap {
     display: flex;
     align-items: center;
-    /* vertically align title and form */
     justify-content: center;
-    /* center them horizontally as a group */
     gap: 40px;
-    /* space between title and form */
+    
+    /* Torna responsivo em telas menores */
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 20px; /* gap menor em mobile */
+    }
 }

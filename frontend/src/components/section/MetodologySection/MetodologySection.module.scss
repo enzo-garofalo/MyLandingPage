@@ -1,16 +1,40 @@
 .contentWrap {
   display: flex;
-  align-items: center;   /* centraliza verticalmente */
-  gap: 2rem;             /* espaço entre o funil e os textos */
+  align-items: center;
+  gap: 2rem;
   padding-top: 48px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 30px;
+  }
+
+  @media (max-width: 480px) {
+    gap: 1rem;
+    padding-top: 20px;
+  }
 }
 
 .textWrap {
   display: flex;
-  flex-direction: column; /* empilha título e subtítulo */
-  gap: 0.5rem;            /* espaço entre eles */
+  flex-direction: column;
+  gap: 0.5rem;
+
+  @media (max-width: 768px) {
+    text-align: center; /* Centraliza textos em mobile */
+    gap: 0.3rem;
+  }
 }
 
-.mainTitle{
+.mainTitle {
   margin-top: 70px;
+
+  @media (max-width: 768px) {
+    margin-top: 40px;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 20px;
+  }
 }
