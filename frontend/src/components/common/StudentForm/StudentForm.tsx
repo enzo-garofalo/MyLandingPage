@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import type { AnswerData } from '../../../services/studentFormService';
 import { submitForm } from '../../../services/studentFormService';
 import Alert from '../Alert';
@@ -19,6 +20,7 @@ const validateForm = (formData: AnswerData): string | null => {
 
 
 const StudentForm = () => {
+	const navigate = useNavigate();
 	const [alertMessage, setAlertMessage] = useState<string>("");
 	const [alertType, setAlertType] = useState<'success' | 'error'>('error');
 	const [selected, setSelected] = useState<string>('opcao1');
@@ -47,9 +49,8 @@ const StudentForm = () => {
 		}
 
 		try {
-			const response = await submitForm(formData);
-			setAlertMessage(`Formulário enviado com sucesso! ID: ${response.id}`);
-			setAlertType('success');
+			await submitForm(formData);
+			navigate('/thank-you');
 		} catch (error) {
 			if (error instanceof Error) {
 				console.error(error);
