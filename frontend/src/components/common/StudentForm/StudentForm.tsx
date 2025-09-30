@@ -48,8 +48,13 @@ const StudentForm = () => {
 			const response = await submitForm(formData);
 			setAlertMessage(`Formulário enviado com sucesso! ID: ${response.id}`);
 		} catch (error) {
-			console.error(error);
-			setAlertMessage("Erro ao enviar formulário. Tente novamente.");
+			if (error instanceof Error) {
+				console.error(error);
+				setAlertMessage(error.message || "Erro ao enviar formulário. Tente novamente.");
+			} else {
+				console.error("An unexpected error occurred");
+				setAlertMessage("Ocorreu um erro inesperado. Tente novamente.");
+			}
 		}
 	};
 

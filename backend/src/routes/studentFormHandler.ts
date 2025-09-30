@@ -1,6 +1,6 @@
 import type { Request, RequestHandler, Response } from "express";
+import { AnswerDataSchema } from "./../models/schemas.js";
 import { collections } from "./../models/studentsForm.js";
-
 export namespace StudentFormManager {
 	export const SubmitAnswer: RequestHandler = async (
 		req: Request,
@@ -11,11 +11,10 @@ export namespace StudentFormManager {
 				throw new Error("Answers collection is not initialized.");
 			}
 
-			const newAnswer = req.body; // já tipado como AnswerData
+			const newAnswer = AnswerDataSchema.parse(req.body);
 			const result = await collections.answers.insertOne(newAnswer);
 
 			if (result && result.insertedId) {
-				// res.json define Content-Type: application/json automaticamente
 				return res.status(201).json({
 					message: "Successfully created a new answer",
 					id: result.insertedId.toString(),

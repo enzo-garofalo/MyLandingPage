@@ -9,7 +9,7 @@ export default function StudentFormPage() {
                 <span className={Styles.title}>Quanto tempo heim?</span>
                 <span className={Styles.SecondTitle}>Hello, My dear student! 😃</span>
                 <span className={Styles.thirdText}>
-                    Estou preparando um mural especial enzo para vocês.
+                    Estou preparando um mural especial para vocês.
                 </span>
                 <span className={Styles.thirdText}>
                     Quer participar? É só preencher o formulário!

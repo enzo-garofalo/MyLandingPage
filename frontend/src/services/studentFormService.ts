@@ -9,7 +9,8 @@ export interface AnswerData {
 }
 
 export async function submitForm(data: AnswerData) {
-    const response = await fetch("http://localhost:3000/student/submit-form", {
+    const apiUrl = import.meta.env.VITE_API_URL;
+    const response = await fetch(`${apiUrl}/student/submit-form`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -18,7 +19,8 @@ export async function submitForm(data: AnswerData) {
   });
   
   if (!response.ok) {
-    throw new Error("Erro ao enviar formulário");
+    const errorData = await response.json();
+    throw new Error(errorData.message || "Erro ao enviar formulário");
   }
 
   return await response.json();
